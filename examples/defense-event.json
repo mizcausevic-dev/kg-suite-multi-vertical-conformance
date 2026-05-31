@@ -1,0 +1,12 @@
+{
+  "event_id": "0190dt-0002",
+  "kind": "defensetech.export-control.itar-ear-screening-performed",
+  "resource": {
+    "type": "technical-data-package",
+    "id_tokenized": "tok_res_tdp_b2",
+    "cui_categorization": "CUI-SPECIFIED-NOFORN",
+    "export_control_status": "ITAR",
+    "foreign_person_access_restriction": "US-PERSON-ONLY"
+  },
+  "regulatory_basis": ["itar-22-cfr-120-130", "ear-deemed-export-22-cfr-120-50", "nist-sp-800-172-enhanced-security-requirements"]
+}

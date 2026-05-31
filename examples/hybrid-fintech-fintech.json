@@ -1,0 +1,14 @@
+{
+  "event_id": "HYBRID-001",
+  "kind": "fintech.credit-application.scored",
+  "resource": {
+    "type": "credit-application",
+    "fhir_resource_type": "Patient"
+  },
+  "regulatory_basis": ["ecoa-reg-b", "fcra-reg-v", "hipaa-permissible-purpose"],
+  "agent": {
+    "human_credit_officer_required": true,
+    "fcra_permissible_purpose": "604(a)(3)(A)",
+    "permissible_purpose_hipaa": "treatment"
+  }
+}

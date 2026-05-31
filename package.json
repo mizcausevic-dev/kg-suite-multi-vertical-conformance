@@ -1,0 +1,16 @@
+{
+  "name": "kg-suite-multi-vertical-conformance",
+  "version": "0.1.0",
+  "description": "Runs any KG Suite artifact through all 10 verticals' verification heuristics in one pass. Surfaces the per-vertical compliance posture matrix — applicable / not-applicable / partial / failed — for buyer-side procurement reviewers evaluating multi-vertical SaaS vendors (e.g., one tool touching HealthTech + FinTech + EdTech data).",
+  "type": "module",
+  "main": "src/index.mjs",
+  "bin": { "kg-suite-multi-conformance": "src/cli.mjs" },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "start": "node src/cli.mjs"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/mizcausevic-dev/kg-suite-multi-vertical-conformance",
+  "repository": { "type": "git", "url": "git+https://github.com/mizcausevic-dev/kg-suite-multi-vertical-conformance.git" },
+  "keywords": ["kinetic-gain-protocol-suite", "multi-vertical", "conformance", "horizontal-tool", "procurement"]
+}
