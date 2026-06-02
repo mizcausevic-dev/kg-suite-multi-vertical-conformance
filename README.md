@@ -1,6 +1,6 @@
 # kg-suite-multi-vertical-conformance
 
-> Run any Kinetic Gain Protocol Suite artifact through **all 10 verticals' fingerprint heuristics** in one pass. Output is a per-vertical applicability posture matrix — *applicable / partial / not-applicable* — for buyer-side procurement reviewers evaluating multi-vertical SaaS vendors (e.g., a tool that touches HealthTech + FinTech + EdTech data simultaneously).
+> Run any Kinetic Gain Protocol Suite artifact through **all 11 verticals' fingerprint heuristics** in one pass. Output is a per-vertical applicability posture matrix — *applicable / partial / not-applicable* — for buyer-side procurement reviewers evaluating multi-vertical SaaS vendors (e.g., a tool that touches HealthTech + FinTech + EdTech data simultaneously).
 
 Part of the [Kinetic Gain Protocol Suite](https://suite.kineticgain.com).
 
@@ -80,7 +80,7 @@ Output flags **both** `fintech` (applicable) and `healthtech` (applicable or par
 ## Limits (v0.1)
 
 - **Heuristic, not authoritative.** A posture of `applicable` says "this artifact looks like it belongs to this vertical." It doesn't say the artifact *passes* that vertical's verifier — for that, run the vertical's actual verifier. Use this tool to *select* which verifiers to run, not to replace them.
-- **4-signal fingerprint** — adequate for the current 10 verticals + their typical artifact shapes. Future versions may need weighted signals or per-shape (audit-stream vs Decision Card vs Evidence Bundle) fingerprint sets.
+- **4-signal fingerprint** — adequate for the current 11 verticals + their typical artifact shapes. Future versions may need weighted signals or per-shape (audit-stream vs Decision Card vs Evidence Bundle) fingerprint sets.
 - **No async fetch / no network** — runs purely against the in-memory artifact. For artifacts that reference external Decision Card URLs, fetch separately and feed the resolved JSON in.
 
 ## License
