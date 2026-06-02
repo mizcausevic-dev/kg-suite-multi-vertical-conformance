@@ -6,7 +6,7 @@ import { computeMultiVerticalPosture, VERTICALS } from "../src/index.mjs";
 const defenseEvent = JSON.parse(readFileSync(new URL("../examples/defense-event.json", import.meta.url), "utf8"));
 const hybridEvent = JSON.parse(readFileSync(new URL("../examples/hybrid-fintech-fintech.json", import.meta.url), "utf8"));
 
-test("10 verticals registered", () => assert.equal(VERTICALS.length, 10));
+test("11 verticals registered", () => assert.equal(VERTICALS.length, 11));
 
 test("defense event primary vertical = defensetech", () => {
   const r = computeMultiVerticalPosture(defenseEvent);
@@ -16,9 +16,9 @@ test("defense event primary vertical = defensetech", () => {
   assert.ok(def.applicability_score >= 0.75);
 });
 
-test("defense event posture matrix returns all 10 verticals sorted by score", () => {
+test("defense event posture matrix returns all 11 verticals sorted by score", () => {
   const r = computeMultiVerticalPosture(defenseEvent);
-  assert.equal(r.matrix.length, 10);
+  assert.equal(r.matrix.length, 11);
   for (let i = 0; i < r.matrix.length - 1; i++) {
     assert.ok(r.matrix[i].applicability_score >= r.matrix[i+1].applicability_score, `row ${i} should sort by descending score`);
   }

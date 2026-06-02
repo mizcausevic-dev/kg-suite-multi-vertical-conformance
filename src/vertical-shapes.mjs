@@ -98,5 +98,14 @@ export const VERTICALS = [
     resource_type_substrings: ["cui", "technical-data-package", "weapon-system", "classified", "cage"],
     key_fields: ["resource.cui_categorization", "resource.export_control_status", "resource.foreign_person_access_restriction"],
     primary_repo: "defense-decision-record-audit-stream"
+  },
+  {
+    code: "retailtech",
+    name: "RetailTech",
+    kind_prefixes: ["retailtech.", "retail.", "commerce.", "pricing.", "biometric.", "loyalty."],
+    regulatory_basis_substrings: ["ftc-section-5", "ftc-algorithmic-pricing", "ftc-operation-ai-comply", "eu-omnibus-2019-2161", "ny-s365a-atbp", "nyc-22-1201", "ca-sb-892", "ca-cppa-admt", "ccpa", "cpra", "bipa-740-ilcs-14", "il-sb-2979", "pci-dss-4-0"],
+    resource_type_substrings: ["personalized-quote", "dynamic-price", "biometric-template", "shopper-profile", "loyalty-tier", "refund-decision", "fraud-score", "recommendation"],
+    key_fields: ["pricing_transparency.disclosure_present", "pricing_transparency.disclosure_artifact_url", "biometric_governance.consent_artifact_ref", "biometric_governance.retention_envelope_id"],
+    primary_repo: "retail-decision-record-audit-stream"
   }
 ];
